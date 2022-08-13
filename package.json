@@ -1,0 +1,27 @@
+{
+  "name": "sign-up-form",
+  "version": "1.0.0",
+  "description": "In this project, I practice creating a basic form and validating it\r using built-in HTML attributes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmedhanyh/sign-up-form.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmedhanyh/sign-up-form/issues"
+  },
+  "homepage": "https://github.com/ahmedhanyh/sign-up-form#readme",
+  "devDependencies": {
+    "eslint": "^8.21.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "prettier": "2.7.1"
+  }
+}
