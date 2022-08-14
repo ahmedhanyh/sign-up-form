@@ -67,3 +67,32 @@ a {
   font-size: inherit;
   color: inherit;
 }
+
+.main-content {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  flex: 1;
+}
+
+section:nth-child(odd) {
+  background-color: rgba(230, 230, 230, 0.5);
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.info-container span {
+  margin-left: 32px;
+}
