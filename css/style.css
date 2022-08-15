@@ -16,9 +16,11 @@
   font-weight: 600;
 }
 
-.image-sidebar {
-  margin: 0 auto;
+.content {
+  display: flex;
+}
 
+.image-sidebar {
   width: 600px;
   height: 100vh;
 
@@ -77,6 +79,7 @@ a {
 
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 /* styles for specific sections */
@@ -95,7 +98,7 @@ section:nth-child(odd) {
   justify-content: space-evenly;
 
   font-size: 1.5rem;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .info-container span {
@@ -108,8 +111,9 @@ section:nth-child(2) {
   box-shadow: 4px 4px 8px #a5a5a5;
 }
 
-.form-container h2 {
-  margin: 24px 0px 32px;
+.form-container p {
+  margin: 24px 0px;
+  font-size: 1.5rem;
 }
 
 input,
@@ -158,11 +162,11 @@ input:focus-visible {
 button {
   display: block;
 
-  width: 200px;
-  height: 50px;
+  width: 250px;
+  height: 55px;
 
   margin: 32px;
-  padding: 12px 24px;
+  padding: 8px 24px;
 
   background-color: #596d48;
 
@@ -173,6 +177,7 @@ button {
 
   color: white;
   font-weight: bold;
+  font-size: 1.1rem;
 
   cursor: pointer;
 }
