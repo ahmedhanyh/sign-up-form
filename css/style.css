@@ -156,6 +156,11 @@ input:valid:not(:placeholder-shown) {
   border-color: green;
 }
 
+input + span {
+  color: red;
+  font-size: 0.7rem;
+}
+
 form {
   width: 624px;
 
