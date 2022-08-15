@@ -137,6 +137,25 @@ input {
   border-radius: 4px;
 }
 
+input:focus-visible,
+input:focus-visible:invalid:placeholder-shown {
+  outline: none;
+  border-color: blue;
+  box-shadow: 2px 2px 8px #b5b5b5;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:invalid:placeholder-shown {
+  border-color: #e5e7eb;
+}
+
+input:valid:not(:placeholder-shown) {
+  border-color: green;
+}
+
 form {
   width: 624px;
 
@@ -150,12 +169,6 @@ form > div {
   flex-direction: column;
   align-items: flex-start;
   gap: 2px;
-}
-
-input:focus-visible {
-  outline: none;
-  border-color: blue;
-  box-shadow: 2px 2px 8px #b5b5b5;
 }
 
 /* buttons section */
