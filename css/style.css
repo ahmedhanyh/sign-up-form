@@ -106,9 +106,10 @@ section:nth-child(odd) {
 }
 
 /* form styles */
-section:nth-child(2) {
+.form-container {
   padding: 0px 32px 0px;
   box-shadow: 4px 4px 8px #a5a5a5;
+  flex: 1.1;
 }
 
 .form-container p {
@@ -159,6 +160,7 @@ input:valid:not(:placeholder-shown) {
 input + span {
   color: red;
   font-size: 0.7rem;
+  height: 0.7rem;
 }
 
 form {

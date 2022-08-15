@@ -75,3 +75,27 @@ function checkPasswordValidity() {
 
 passwordField.addEventListener("input", checkPasswordValidity);
 passwordConfirmationField.addEventListener("input", checkPasswordValidity);
+
+const formElement = document.querySelector("form");
+formElement.addEventListener("input", (event) => {
+  const inputField = event.target;
+
+  if (inputField.nodeName !== "INPUT" || inputField.id.includes("pswd")) {
+    return;
+  }
+
+  if (!inputField.validity.valid && inputField.id === "email") {
+    if (
+      !inputField.validity.typeMismatch &&
+      !inputField.validity.valueMissing
+    ) {
+      inputField.setCustomValidity("");
+    } else {
+      const message = inputField.validationMessage.split(".")[0] + ".";
+      inputField.setCustomValidity(message);
+    }
+  }
+
+  inputField.nextElementSibling.textContent = inputField.validationMessage;
+  inputField.setCustomValidity("");
+});
